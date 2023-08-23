@@ -5,11 +5,11 @@
 # Whole Program LLVM in Go
 
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
-[![Build Status](https://travis-ci.org/SRI-CSL/gllvm.svg?branch=master)](https://travis-ci.org/SRI-CSL/gllvm)
-[![Go Report Card](https://goreportcard.com/badge/github.com/SRI-CSL/gllvm)](https://goreportcard.com/report/github.com/SRI-CSL/gllvm)
+[![Build Status](https://travis-ci.org/umbertov/gllvm.svg?branch=master)](https://travis-ci.org/umbertov/gllvm)
+[![Go Report Card](https://goreportcard.com/badge/github.com/umbertov/gllvm)](https://goreportcard.com/report/github.com/umbertov/gllvm)
 
-**TL; DR:**  A drop-in replacement for [wllvm](https://github.com/SRI-CSL/whole-program-llvm), that builds the
-bitcode in parallel, and is faster. A comparison between the two tools can be gleaned from building the [Linux kernel.](https://github.com/SRI-CSL/gllvm/tree/master/examples/linux-kernel)
+**TL; DR:**  A drop-in replacement for [wllvm](https://github.com/umbertov/whole-program-llvm), that builds the
+bitcode in parallel, and is faster. A comparison between the two tools can be gleaned from building the [Linux kernel.](https://github.com/umbertov/gllvm/tree/master/examples/linux-kernel)
 
 ## Quick Start Comparison Table
 
@@ -35,7 +35,7 @@ bitcode in parallel, and is faster. A comparison between the two tools can be gl
 This project, `gllvm`, provides tools for building whole-program (or
 whole-library) LLVM bitcode files from an unmodified C or C++
 source package. It currently runs on `*nix` platforms such as Linux,
-FreeBSD, and Mac OS X. It is a Go port of [wllvm](https://github.com/SRI-CSL/whole-program-llvm).
+FreeBSD, and Mac OS X. It is a Go port of [wllvm](https://github.com/umbertov/whole-program-llvm).
 
 `gllvm` provides compiler wrappers that work in two
 phases. The wrappers first invoke the compiler as normal. Then, for
@@ -49,7 +49,7 @@ utility to read the contents of the dedicated section and link all of
 the bitcode into a single whole-program bitcode file. This utility
 works for both executable and native libraries.
 
-For more details see [wllvm](https://github.com/SRI-CSL/whole-program-llvm).
+For more details see [wllvm](https://github.com/umbertov/whole-program-llvm).
 
 ## Prerequisites
 
@@ -64,14 +64,14 @@ tools such as `objcopy` and `ld`.
 
 To install, simply do (making sure to include those `...`)
 ```
-go get github.com/SRI-CSL/gllvm/cmd/...
+go get github.com/umbertov/gllvm/cmd/...
 ```
 This should install five binaries: `gclang`, `gclang++`, `gflang`, `get-bc`, and `gsanity-check`
 in the `$GOPATH/bin` directory.
 
 If you are using `go 1.16` you may be forced to install it like this:
 ```
-GO111MODULE=off go get github.com/SRI-CSL/gllvm/cmd/...
+GO111MODULE=off go get github.com/umbertov/gllvm/cmd/...
 ```
 Hopefully we will have a better fix for this [soon](https://github.com/golang/go/issues/44776)?
 ## Usage
@@ -99,7 +99,7 @@ get-bc pkg-config
 ```
 
 which will produce the bitcode module `pkg-config.bc`. For more on this example
-see [here](https://github.com/SRI-CSL/gllvm/tree/master/examples/pkg-config).
+see [here](https://github.com/umbertov/gllvm/tree/master/examples/pkg-config).
 
 ## Advanced Configuration
 

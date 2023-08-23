@@ -69,7 +69,7 @@ export PATH=${GOPATH}/bin:${LLVM_HOME}/bin:${PATH}
 
 ## Configuration stuff.
 
-The file [`tinyconfig64`](https://github.com/SRI-CSL/gllvm/blob/master/examples/linux-kernel/tinyconfig64) is generated
+The file [`tinyconfig64`](https://github.com/umbertov/gllvm/blob/master/examples/linux-kernel/tinyconfig64) is generated
 by `make tinyconfig` and then using `make menuconfig` to specialize the build to 64 bits.
 
 ## The Tarball Build with gllvm
@@ -82,7 +82,7 @@ script within the vagrant box, configured as described above.
 
 ### building from a tarball with gllvm
 
-go get github.com/SRI-CSL/gllvm/cmd/...
+go get github.com/umbertov/gllvm/cmd/...
 
 cd ${HOME}
 wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.14.39.tar.xz
@@ -146,8 +146,8 @@ sys  	0m44.072s
 
 ## Building from a git clone
 
-You can also build from a [git clone using gllvm,](https://github.com/SRI-CSL/gllvm/blob/master/examples/linux-kernel/build_linux_gllvm_git.sh)
-or build from a [git clone using wllvm.](https://github.com/SRI-CSL/gllvm/blob/master/examples/linux-kernel/build_linux_wllvm_git.sh)
+You can also build from a [git clone using gllvm,](https://github.com/umbertov/gllvm/blob/master/examples/linux-kernel/build_linux_gllvm_git.sh)
+or build from a [git clone using wllvm.](https://github.com/umbertov/gllvm/blob/master/examples/linux-kernel/build_linux_wllvm_git.sh)
 Though using a tarball is faster, and seemingly more reliable.
 
 # Building a Bootable Kernel from the Bitcode

@@ -40,7 +40,7 @@ Install `gllvm`.
 ```
 >export GOPATH=/vagrant/go
 
->go get github.com/SRI-CSL/gllvm/cmd/...
+>go get github.com/umbertov/gllvm/cmd/...
 
 >export PATH=${GOPATH}/bin:${PATH}
 ```

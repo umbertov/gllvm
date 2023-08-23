@@ -2,7 +2,7 @@
 
 ### building from a tarball with gllvm
 
-go get github.com/SRI-CSL/gllvm/cmd/...
+go get github.com/umbertov/gllvm/cmd/...
 
 cd ${HOME}
 wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.14.39.tar.xz

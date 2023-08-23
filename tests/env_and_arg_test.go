@@ -2,7 +2,7 @@ package test
 
 import (
 	"fmt"
-	"github.com/SRI-CSL/gllvm/shared"
+	"github.com/umbertov/gllvm/shared"
 	"os"
 	"testing"
 )

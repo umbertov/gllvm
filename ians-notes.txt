@@ -1,10 +1,10 @@
 To edit the code locally use the repository here:
 
-~/go/src/github.com/SRI-CSL/gllvm
+~/go/src/github.com/umbertov/gllvm
 
 Then do:
 
-go install github.com/SRI-CSL/gllvm/cmd/...
+go install github.com/umbertov/gllvm/cmd/...
 
 
 For keeping up with the Jones:
